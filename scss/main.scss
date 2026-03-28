@@ -108,3 +108,35 @@ nav {
         }
     }
 }
+
+.about_section {
+    background-color: #f7f8fc;
+    .container {
+        padding: 200px 0px;
+        .about_section_info {
+            text-align: center;
+            h1 {
+                font-size: 30px;
+                font-weight: 600;
+                color: #222222;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                color: gray;
+            }
+        }
+        .about_section_boxs {
+            margin-top: 50px;
+            @include displays();
+            .about_section_card {
+                width: 350px;
+                border-radius: 10px;
+                background-color: white;
+                box-shadow: 0px 0px 5px 1px gainsboro;
+                padding: 40px 50px;
+            }
+        }
+    }
+}
